@@ -23,8 +23,11 @@ public class TipCalculator{
         System.out.println("----------------------");
         System.out.println("Total bill before tip: " + totalCost);
         System.out.println("Total Percentage: " + tipPercentage + "%");
-        System.out.println("Total Tip: " + ((double) tipPercentage / 100) * totalCost);
-        System.out.println("Total bill with tip: " + (1 + (double) tipPercentage / 100) * totalCost);
+        System.out.println("Total Tip: " + tip);
+        System.out.println("Total bill with tip: " + (totalCost + tip));
+        System.out.println("Per person cost before tip: " + (totalCost / peopleEating));
+        System.out.println("Tip per person: " + (tip / peopleEating));
+        System.out.println("Total cost per person: " + ((totalCost / peopleEating) + (tip / peopleEating)));
 
     }
 }
