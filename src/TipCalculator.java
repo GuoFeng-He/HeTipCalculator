@@ -24,7 +24,7 @@ public class TipCalculator{
                 String itemName = scan.nextLine();
                 System.out.print("Enter amount: ");
                 int amount = scan.nextInt();
-                itemList.append(itemName).append(" (").append(amount).append(")").append("\n"); // adding spaces courtesy of: https://stackoverflow.com/questions/7833689/how-can-i-print-a-string-adding-newlines-in-java
+                itemList.append(itemName).append(" (").append(amount).append("x)").append("(Cost: $").append(itemCost).append(" each)").append("\n"); // adding spaces courtesy of: https://stackoverflow.com/questions/7833689/how-can-i-print-a-string-adding-newlines-in-java
                 totalCost += (itemCost * amount);
             }
         }
